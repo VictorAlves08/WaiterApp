@@ -1,26 +1,31 @@
-const orders: Order[] = [
+import { Order } from '../types/Orders';
+
+import quatroQueijoImg from '../assets/images/quatro-queijos.png';
+import cocaColaImg from '../assets/images/coca-cola.png';
+
+export const orders: Order[] = [
   {
     _id: '6372e48cbcd195b0d3d0f7f3',
-    table: '123',
+    table: '633',
     status: 'WAITING',
     products: [
       {
         product: {
-          name: 'Pizza quatro queijos',
-          imagePath: '1668472896991-quatro-queijos.png',
-          price: 40,
+          name: 'Pizza Quatro Queijos',
+          imagePath: quatroQueijoImg,
+          price: 50,
         },
-        quantity: 3,
-        _id: '6372e48cbcd195b0d3d0f7f4'
+        _id: '6372e48cbcd195b0d3d0f7f4',
+        quantity: 3
       },
       {
         product: {
-          name: 'Coca cola',
-          imagePath: '1668473462705-coca-cola.png',
-          price: 7,
+          name: 'Coca-Cola 2L',
+          imagePath: cocaColaImg,
+          price: 10,
         },
-        quantity: 2,
-        _id: '6372e48cbcd195b0d3d0f7f5'
+        _id: '6372e48cbcd195b0d3d0f7f5',
+        quantity: 2
       }
     ],
   }
